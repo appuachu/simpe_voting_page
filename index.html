@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Voting Page</title>
+
+    <style media="screen">
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #3b5998;
+  color: white;
+}
+
+#result {
+  text-align: center;
+  padding: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#show-comments {
+  display: block;
+  margin: 20px auto;
+}
+
+#comments-section {
+  margin: 20px auto;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#display-comments {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+p {
+  font-size:18px;
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Voting Page</h1>
+    <h2>What is your favorite color?</h2>
+    <button id="option1">Red</button>
+    <button id="option2">Blue</button>
+    <p id="result">Red: <span id="count1">0</span> votes. Blue: <span id="count2">0</span> votes.</p>
+    <button id="show-comments">Show comments</button>
+    <div id="comments-section">
+      <textarea id="comments"></textarea>
+      <button id="submit">Submit</button>
+      <div id="display-comments"></div>
+
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
